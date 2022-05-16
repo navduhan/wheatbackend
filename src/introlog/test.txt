@@ -1,0 +1,687 @@
+Host_Protein,Pathogen_Protein,ProteinA,ProteinB,intdb_x,Method,Type,Confidence,PMID
+TraesCS6A02G059000,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G216600,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2A02G417800,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G408100,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G434500,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2A02G203000,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G178900,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G350800,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6B02G073100,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6B02G072500,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2B02G230100,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2B02G436600,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2B02G436700,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G376100,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G212700,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G413100,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G415000,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G413200,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G469600,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCSU02G027600,OAJ01838,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P60709,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1A02G274400,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P60709,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1A02G274400,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P60709,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS2A02G377500,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G361700,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2A02G299100,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G228800,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6A02G038600,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6A02G099700,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6A02G038400,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G484500,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G103800,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G423800,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G142300,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G080200,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G458300,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G119900,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2B02G186000,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G467200,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G376500,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G529700,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G025900,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G167700,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G275500,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6B02G082000,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G247500,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS2D02G316700,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G266000,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G469100,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G469000,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G103100,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCSU02G229800,OAJ01838,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P63261,P60010,hpidb,two hybrid array,physical association,0.56,27107014
+TraesCS1A02G274400,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P63261,P60010,hpidb,two hybrid pooling approach,physical association,0.56,27107014
+TraesCS1A02G274400,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3A02G377300,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4A02G356100,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5A02G124300,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1A02G020500,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5A02G000400,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4A02G264400,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1B02G024500,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3B02G410000,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4B02G050600,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5B02G516100,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS1B02G201400,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3D02G370400,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS4D02G050800,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS5D02G132200,OAJ01838,P63261,P60010,hpidb,validated two hybrid,physical association,0.56,27107014
+TraesCS3A02G075800,OAJ01838,P02283,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7B02G394500,OAJ01838,P02283,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS6B02G055500,OAJ01838,P02283,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7B02G394800,OAJ01838,P02283,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G238400,OAJ02622,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS1A02G274400,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS3A02G377300,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS4A02G356100,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS5A02G124300,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS1A02G020500,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS5A02G000400,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS4A02G264400,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS1B02G024500,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS3B02G410000,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS4B02G050600,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS5B02G516100,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS1B02G201400,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS3D02G370400,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS4D02G050800,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS5D02G132200,OAJ04352,100009271,852415,hpidb,pull down,direct interaction,-,21964468
+TraesCS7A02G465300,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ04352,7316,852415,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ01839,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ03483,7316,851676,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ04197,7316,851000,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ03483,7316,856924,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ02430,7316,851335,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ01838,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465300,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G465600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087800,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453400,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G475100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G087100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G466500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G408200,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G453300,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G073800,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G119700,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366800,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G164700,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G148000,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G367600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354200,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366400,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G115100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G293300,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2B02G426500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354000,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G366700,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7B02G354100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G474700,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G087500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G248600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G405500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442700,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G125600,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G443100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G442900,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G453100,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018500,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G018900,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCSU02G019400,OAJ07837,7316,856870,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1A02G274400,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAI99866,P84040,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAJ02305,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAI99867,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAI99147,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAI98289,P02299,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1A02G274400,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3A02G377300,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G356100,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G124300,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5A02G000400,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4A02G264400,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G024500,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3B02G410000,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4B02G050600,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5B02G516100,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS1B02G201400,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS3D02G370400,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS4D02G050800,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAJ01886,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS5D02G132200,OAI99810,P84051,P60010,hpidb,cross-linking study,physical association,0.4,24034245
+TraesCS7A02G465300,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G465600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G453600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2A02G408500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6A02G087800,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6A02G266000,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G453400,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2A02G475100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6A02G087100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G453500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G466500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2A02G408200,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7A02G453300,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS5A02G073800,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6A02G119700,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G366800,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6B02G164700,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6B02G148000,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G367600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G354200,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G366600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G366400,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6B02G115100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6B02G293300,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2B02G426500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G354000,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G366700,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7B02G354100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2D02G474700,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6D02G248600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS2D02G405500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7D02G442700,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS6D02G125600,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7D02G443100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7D02G442900,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS7D02G453100,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCSU02G018500,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCSU02G018900,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCSU02G019400,OAJ00740,7322,850620,hpidb,pull down,direct interaction,-,23936628
+TraesCS1A02G274400,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS3A02G377300,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4A02G356100,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G124300,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G000400,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4A02G264400,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1B02G024500,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS3B02G410000,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4B02G050600,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5B02G516100,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1B02G201400,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS3D02G370400,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4D02G050800,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G132200,OAJ02622,7316,850504,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G141700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4A02G086300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G458000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G266000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7A02G506300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4A02G306500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6A02G147500,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4A02G086400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1A02G202800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2A02G458100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5A02G224000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4B02G218100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1B02G241200,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5B02G222800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6B02G176000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G458700,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS6D02G136800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4D02G218400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS5D02G269800,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1D02G206100,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS1D02G206400,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS2D02G458600,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS7D02G143000,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS4D02G218300,OAJ02622,7316,853969,hpidb,affinity chromatography technology,physical association,-,23801757
+TraesCS3B02G280000,OAJ02622,7316,852424,hpidb,affinity chromatography technology,physical association,-,23801757
