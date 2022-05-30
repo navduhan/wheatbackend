@@ -21,17 +21,18 @@ const wheatSchema = new mongoose.Schema({
     PMID: {type:String},
 });
 
-router.route('/ppi').get(async(req, res) => {
+router.route('/ppi').post(async(req, res) => {
 
-let {species, identity, coverage, evalue,intdb} =req.query
+
+  const body = JSON.parse(JSON.stringify(req.body));
+  console.log(body);
+
+//  let results = 'kbunt1653501842990results'
+
+let results = await getPPI(body.category,body.hspecies, body.pspecies, body.hi, body.hc, body.he,body.pi,body.pc,body.pe, body.intdb, body.genes, body.ids)
+ res.json(results)
+console.log(results)
  
- 
- let results = await getPPI(species, identity, coverage, evalue,intdb)
-
-    res.json(results)
-    console.log(results)
-
-    
       });
 
 router.route('/results/').get(async(req,res) =>{
@@ -58,6 +59,33 @@ router.route('/results/').get(async(req,res) =>{
      
       let pathogen_protein =await Results.distinct('Pathogen_Protein')
       res.json({'results':final,'total':counts,'hostcount':host_protein.length,'pathogencount':pathogen_protein.length})
+
+})
+
+router.route('/network/').get(async(req,res) =>{
+  let {results,page,  size} = req.query
+  // if(!page){
+  //     page = 1
+  //   }
+  //  if (page){
+  //    page = parseInt(page) + 1
+  //  }
+  //   if (!size){
+  //     size = 1000
+  //   }
+
+  //   const limit = parseInt(size)
+
+  //   const skip = (page-1) * size;
+    const resultsdb = mongoose.connection.useDb("kbunt_results")
+    const Results = resultsdb.model(results, wheatSchema)
+
+    let final = await Results.find().exec()
+    let counts = await Results.count()
+    let host_protein =await Results.distinct("Host_Protein")
+   
+    let pathogen_protein =await Results.distinct('Pathogen_Protein')
+    res.json({'results':final,'total':counts,'hostcount':host_protein.length,'pathogencount':pathogen_protein.length})
 
 })
 

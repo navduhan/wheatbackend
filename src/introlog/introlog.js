@@ -1,21 +1,20 @@
 const { spawn } = require('child_process');
 
 const path = require('path');
-const getPPI = (species,identity, coverage, evalue, intdb)=>{
+const getPPI = (method, hspecies, pspecies,identity, coverage, evalue, pi, pc, pe, intdb, genes, idt)=>{
 let output;
-// console.log(__dirname)
-const arg = `/Users/naveen/Documents/web/wheatbackend/src/introlog/hpinterolog.py --blastdb "wheatblast" --ppidb "ppidb" --host_table ${species} --pathogen_table "tindicas" --host_identity ${parseInt(identity)} --host_coverage ${parseInt(coverage)} --host_evalue ${parseFloat(evalue)} --pathogen_identity ${parseInt(identity)} --pathogen_coverage ${parseInt(coverage)} --pathogen_evalue ${parseFloat(evalue)} --ppitables ${intdb}`
-console.log(arg)  
-const intrdb = intdb.split(",")
+let getS;
+console.log("/Users/naveen/Documents/web/wheatbackend/src/introlog/hpinterolog.py", "--method", method, "--blastdb", "wheatblast", "--ppidb", "ppidb", "--host_table", hspecies, "--pathogen_table", pspecies, "--host_identity", parseInt(identity), "--host_coverage", parseInt(coverage) ,"--host_evalue", parseFloat(evalue), "--pathogen_identity", parseInt(pi) ,"--pathogen_coverage", parseInt(pc) ,"--pathogen_evalue", parseFloat(pe) ,"--ppitables", intdb, '--id', idt, '--genes', genes)
+if (genes.length >0){
+    getS = spawn('python3', ["/Users/naveen/Documents/web/wheatbackend/src/introlog/hpinterolog.py", "--method", method, "--blastdb", "wheatblast", "--ppidb", "ppidb", "--host_table", hspecies, "--pathogen_table", pspecies, "--host_identity", parseInt(identity), "--host_coverage", parseInt(coverage) ,"--host_evalue", parseFloat(evalue), "--pathogen_identity", parseInt(pi) ,"--pathogen_coverage", parseInt(pc) ,"--pathogen_evalue", parseFloat(pe) ,"--ppitables", intdb, '--id', idt, '--genes', genes]);
 
-console.log(intrdb)
-
-const getS = spawn('python3', ["/Users/naveen/Documents/web/wheatbackend/src/introlog/hpinterolog.py", "--blastdb", "wheatblast", "--ppidb", "ppidb", "--host_table", species, "--pathogen_table", "tindicas", "--host_identity", parseInt(identity), "--host_coverage", parseInt(coverage) ,"--host_evalue", parseFloat(evalue), "--pathogen_identity", parseInt(identity) ,"--pathogen_coverage", parseInt(coverage) ,"--pathogen_evalue", parseFloat(evalue) ,"--ppitables", intdb]);
-// const getS = spawn('python3', [arg])
+}
+else{
+getS = spawn('python3', ["/Users/naveen/Documents/web/wheatbackend/src/introlog/hpinterolog.py", "--method", method, "--blastdb", "wheatblast", "--ppidb", "ppidb", "--host_table", hspecies, "--pathogen_table", pspecies, "--host_identity", parseInt(identity), "--host_coverage", parseInt(coverage) ,"--host_evalue", parseFloat(evalue), "--pathogen_identity", parseInt(pi) ,"--pathogen_coverage", parseInt(pc) ,"--pathogen_evalue", parseFloat(pe) ,"--ppitables", intdb]);
+}
 
 getS.stdout.on('data', (data) => {
 
-    
     output = data.toString();
 
     // console.log('output was generated: ' + output);
