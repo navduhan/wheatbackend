@@ -158,7 +158,7 @@ def main():
     results_list ={}
    
     intTables = options.ppitables.replace(' ','').split(",")
-    
+    print(intTables)
     hproteins = None
     pproteins = None
     
