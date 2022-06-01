@@ -28,6 +28,7 @@ parser.add_argument("--pathogen_coverage", dest='pc',type=int, help="Pathogen co
 parser.add_argument("--pathogen_evalue", dest='pe', type=float, help="Pathogen evalue for blast filter")
 parser.add_argument('--id', dest='idt', type=str, help="Id type [host, pathogen]" )
 parser.add_argument('--genes', dest='genes', type=str, help="Genes ids to search")
+parser.add_argument('--domdb',dest='domdb', type =str)
 parser.add_argument('--ppitables', dest='ppitables', type=str, default='all', 
     help="""Provide space separated interaction database names. For example hpidb mint 
 """)
@@ -112,71 +113,27 @@ def ppi(intdb, pathogendf, hostdf):
 
     return final_results
 
-def filter_domain(db, table, genes=None):
+def filter_domain(db, table, idt =None, genes=None):
     mydb = connection(db)
     mtable = mydb[table]
 
     if genes !=None:
-        results = list(mtable.find({'query_name': {'$in':id}}))
+        if idt !=None:
+            if  idt =='host':
+                results = list(mtable.find({'Host_Protein': {'$in':genes}}))
+            if  idt =='pathogen':
+                results = list(mtable.find({'Pathogen_Protein': {'$in':genes}}))
     else:
         results = list(mtable.find({}))
 
     df= pd.DataFrame(results)
     return df
 
-def domain(intdb, pathogendf,hostdf):
-    pp =connection('ppidb')
-    ptable = pp[intdb]
-    pathogen_list = pathogendf['accessionT'].values.tolist()
-    host_list = hostdf['accessionT'].values.tolist()
-    # define query here
-    query = {
-        '$and': [
-        { '$or': [ { 'ProteinA': { '$in' : pathogen_list } }, { 'ProteinB' : { '$in': host_list } } ] },
-        { '$or': [ { 'ProteinA': { '$in' : host_list } }, { 'ProteinB' : { '$in': pathogen_list } } ] }
-    ]
+def consensus(interolog, domain):
 
-    }
-    # Search in database
+    final = interolog.merge(domain, on=['Host_protein', 'Pathogen_Protein'])
 
-    result = list(ptable.find(query))
-
-    # convert to Dataframe
-
-    results = pd.DataFrame(result)
-
-
-    hostA = hostdf[['accessionT', 'query_name']]
-    
-    pathogenB = pathogendf[['accessionT', 'query_name']]
-    hostA.columns =['ProteinA', 'Host_Protein']
-    # print(hostA)
-    pathogenB.columns = ['ProteinB', 'Pathogen_Protein']
-
-    # For host as interactor B and Pathogen as Interactor A
-
-    hostB= hostdf[['accessionT', 'query_name']]
-    pathogenA = pathogendf[['accessionT', 'query_name']]
-    hostB.columns= ['ProteinB', 'Host_Protein']
-    pathogenA.columns= ['ProteinA', 'Pathogen_Protein']
-
-    # Merge ppis and blast
-
-    resultA = results.merge(hostA, on=['ProteinA'])
-    resultsA = resultA.merge(pathogenB, on=['ProteinB'])
-
-    resultB = results.merge(hostB, on=['ProteinB'])
-    resultsB = resultB.merge(pathogenA, on=['ProteinA'])
-
-    final = pd.concat([resultsA, resultsB], axis=0)
-    
-    final_results = final[['Host_Protein', 'Pathogen_Protein', 'ProteinA', 'ProteinB', 'Score', 'DomainA_name', 'DomianA_desc',
-       'DomainA_interpro', 'DomainB_name', 'DomianB_desc', 'DomainB_interpro',
-       'intdb']]
-    
-    final_results = final_results.drop_duplicates()
-
-    return final_results
+    return final
 
 def add_results(data):
     pp =connection('kbunt_results')
@@ -226,32 +183,56 @@ def main():
                 results_list[hpd]=results
             else:
                 rid= "no results"
-    if options.method == 'domain':
+        results.reset_index(inplace=True, drop=True)
+        results_list[hpd]=results
+        try:
+            final = pd.concat(results_list.values(),ignore_index=True)
+
+            final.reset_index(inplace=True, drop=True)
+            rid = add_results(final.to_dict('records'))
+
+            print(rid)
+        except Exception:
+            rid = add_noresults("no results")
+            print(rid)
+
+    if options.method == 'consensus':
+        species = options.hosttable.split("_")[1]
+        table = 'domain_'+options.domdb+"_"+species
+        if hproteins == None and pproteins == None:
+            domain_result = filter_domain(options.blastdb,table)
+        
+        elif hproteins !=None and pproteins==None:
+
+            domain_result = filter_domain(options.blastdb, table, idt = options.idt, genes=hproteins)
+
+        elif hproteins ==None and pproteins !=None:
+
+            domain_result = filter_domain(options.blastdb, table, idt = options.idt, genes=pproteins)
+
         for hpd in intTables:
 
-            host_blast = filter_domain(options.blastdb,options.hosttable, genes=hproteins)
-            pathogen_blast = filter_domain(options.blastdb,options.pathogentable, genes=pproteins)
+            host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
+            pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
             hd =hpd+'s'
         
+            if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
+                results = ppi(hd,pathogen_blast,host_blast)
+                results.reset_index(inplace=True, drop=True)
+                results_list[hpd]=results
+            else:
+                rid= "no results"
             
-            results = domain(hd,pathogen_blast,host_blast)
-            results.reset_index(inplace=True, drop=True)
-            results_list[hpd]=results
-                
-            
-            
+        try:
+            final = pd.concat(results_list.values(),ignore_index=True)
+            con_final = consensus(interolog=final, domain=domain_result)
+            con_final.reset_index(inplace=True, drop=True)
+            rid = add_results(con_final.to_dict('records'))
 
-    
-    try:
-        final = pd.concat(results_list.values(),ignore_index=True)
-
-        final.reset_index(inplace=True, drop=True)
-        rid = add_results(final.to_dict('records'))
-
-        print(rid)
-    except Exception:
-        rid = add_noresults("no results")
-        print(rid)
+            print(rid)
+        except Exception:
+            rid = add_noresults("no results")
+            print(rid)
 
 if __name__ == '__main__':
     main()
