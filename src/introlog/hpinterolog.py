@@ -137,7 +137,7 @@ def consensus(interolog, domain):
 
 def add_results(data):
     pp =connection('kbunt_results')
-    name = round(time.time() * 1000)+'_results'
+    name = f"kbunt{str(round(time.time() * 1000))}results"
     ptable = pp[name]
     ptable.insert_many(data)
 
@@ -156,8 +156,8 @@ def main():
     options, unknownargs = parser.parse_known_args()
     
     results_list ={}
-
-    intTables = options.ppitables.split(",")
+   
+    intTables = options.ppitables.replace(' ','').split(",")
     
     hproteins = None
     pproteins = None
@@ -175,6 +175,7 @@ def main():
 
             host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
             pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
+            
             hd =hpd+'s'
         
             if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
@@ -185,12 +186,12 @@ def main():
                 rid= "no results"
         results.reset_index(inplace=True, drop=True)
         results_list[hpd]=results
+        
         try:
             final = pd.concat(results_list.values(),ignore_index=True)
-
+           
             final.reset_index(inplace=True, drop=True)
             rid = add_results(final.to_dict('records'))
-
             print(rid)
         except Exception:
             rid = add_noresults("no results")
