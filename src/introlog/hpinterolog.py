@@ -171,7 +171,7 @@ def main():
     if options.idt == 'pathogen':
         if options.genes:
             pproteins = options.genes.replace(' ','').split(",")
-    print(pproteins)
+    
     if options.method == 'interolog':
         for hpd in intTables:
 
