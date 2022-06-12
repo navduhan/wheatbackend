@@ -175,7 +175,8 @@ def main():
 
             host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
             pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
-            
+            print(host_blast)
+            print(pathogen_blast)
             hd =hpd+'s'
         
             if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
