@@ -178,6 +178,7 @@ def main():
             print(host_blast)
             print(pathogen_blast)
             hd =hpd+'s'
+            print(hd)
         
             if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
                 results = ppi(hd,pathogen_blast,host_blast)
