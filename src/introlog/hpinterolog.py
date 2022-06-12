@@ -190,8 +190,6 @@ def main():
                 results.reset_index(inplace=True, drop=True)
                 results_list[hpd]=results
             
-        results.reset_index(inplace=True, drop=True)
-        results_list[hpd]=results
         
         try:
             final = pd.concat(results_list.values(),ignore_index=True)
