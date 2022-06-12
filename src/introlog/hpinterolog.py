@@ -185,8 +185,7 @@ def main():
                 results = ppi(hd,pathogen_blast,host_blast)
                 results.reset_index(inplace=True, drop=True)
                 results_list[hpd]=results
-            else:
-                rid= "no results"
+            
         results.reset_index(inplace=True, drop=True)
         results_list[hpd]=results
         
@@ -224,8 +223,7 @@ def main():
                 results = ppi(hd,pathogen_blast,host_blast)
                 results.reset_index(inplace=True, drop=True)
                 results_list[hpd]=results
-            else:
-                rid= "no results"
+            
             
         try:
             final = pd.concat(results_list.values(),ignore_index=True)
