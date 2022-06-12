@@ -159,7 +159,7 @@ def main():
    
     intTables = options.ppitables.replace(' ','').split(",")
 
-    print(intTables)
+    
     
     hproteins = None
     pproteins = None
@@ -177,8 +177,7 @@ def main():
 
             host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
             pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
-            print(host_blast)
-            print(pathogen_blast)
+            
             hd =hpd+'s'
             print(hd)
         
