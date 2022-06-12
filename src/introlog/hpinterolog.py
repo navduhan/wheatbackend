@@ -52,7 +52,11 @@ def filter_blast(db, table,  ident, cov, eval, interologdb, genes=None):
         results = list(mtable.find({'pident':{'$gte':ident},'qcovs':{'$gte':cov},'evalue':{'$lte':eval}
         , 'intdb':interologdb}))
 
-    df= pd.DataFrame(results)
+    if len(results)>0:
+
+        df= pd.DataFrame(results)
+    else:
+        df = "no"
     return df
 
 
