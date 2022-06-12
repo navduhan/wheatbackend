@@ -171,7 +171,7 @@ def main():
     if options.idt == 'pathogen':
         if options.genes:
             pproteins = options.genes.replace(' ','').split(",")
-        
+    print(pproteins)
     if options.method == 'interolog':
         for hpd in intTables:
 
@@ -179,7 +179,7 @@ def main():
             pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
             
             hd =hpd+'s'
-            print(hd)
+            
         
             if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
                 results = ppi(hd,pathogen_blast,host_blast)
