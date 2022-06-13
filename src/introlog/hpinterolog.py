@@ -64,10 +64,10 @@ def filter_blast(table,ident, cov, evalue,intdb,genes=None):
         st = st[:-1]
         st += ")"
 
-        query = "SELECT * FROM {} WHERE qseqid IN {} AND pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}'; ".format(table,st, ident, evalue, cov, intdb)
+        query = "SELECT * FROM {} WHERE qseqid IN {} AND pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}' ORDER BY id; ".format(table,st, ident, evalue, cov, intdb)
         results = db.execute(query).fetchall()
     else:
-        query = "SELECT * FROM {} WHERE pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}'; ".format(table, ident, evalue, cov, intdb)
+        query = "SELECT * FROM {} WHERE pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}' ORDER BY id; ".format(table, ident, evalue, cov, intdb)
         results = db.execute(query).fetchall()
     # print(results)
 
