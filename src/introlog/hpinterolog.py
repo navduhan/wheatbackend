@@ -1,5 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
+import sqlite3
+from sqlite3 import Error
 import argparse
 import time
 
@@ -41,47 +43,72 @@ def connection(db):
 
     return connectDB
 
+def create_connection(db_file):
+    """ create a database connection to a SQLite database """
+    conn = None
+    try:
+        conn = sqlite3.connect(db_file)
+        print(sqlite3.version)
+    except Error as e:
+        print(e)
+    return conn
 
-def filter_blast(db, table,  ident, cov, eval, interologdb, genes=None):
-    mydb = connection(db)
-    mtable = mydb[table]
+def filter_blast(table,ident, cov, evalue,intdb,genes=None):
+    db = create_connection("wheatblast.db")
     if genes !=None:
-        results = list(mtable.find({ 'qseqid': {'$in':genes},'pident':{'$gte':ident},'qcovs':{'$gte':cov},'evalue':{'$lte':eval}
-        , 'intdb':interologdb}))
+        st="("
+        for id in genes:
+
+            st +="'"+id+"',"
+
+        st = st[:-1]
+        st += ")"
+
+        query = "SELECT * FROM {} WHERE qseqid IN {} AND pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}'; ".format(table,st, ident, evalue, cov, intdb)
+        results = db.execute(query).fetchall()
     else:
-        results = list(mtable.find({'pident':{'$gte':ident},'qcovs':{'$gte':cov},'evalue':{'$lte':eval}
-        , 'intdb':interologdb}))
+        query = "SELECT * FROM {} WHERE pident >= {} AND evalue <= {} AND qcovs >= {} AND intdb = '{}'; ".format(table, ident, evalue, cov, intdb)
+        results = db.execute(query).fetchall()
+    # print(results)
 
     if len(results)>0:
-
-        df= pd.DataFrame(results)
+           
+        df = pd.DataFrame(results, columns=['id', 'qseqid', 'sseqid', 'pident','evalue', 'qcov', 'intdb'])
+                  
     else:
-        df = "no"
+        df= "no"
+
     return df
 
 
 def ppi(intdb, pathogendf, hostdf):  
-    pp =connection('ppidb')
-    ptable = pp[intdb]
+    conn = create_connection('ppidb.db')
+   
     pathogen_list = pathogendf['sseqid'].values.tolist()
     host_list = hostdf['sseqid'].values.tolist()
+    
+    ht="("
+    for id in host_list:
+
+        ht +="'"+id+"',"
+
+    ht = ht[:-1]
+    ht += ")"
+    
+    pt="("
+    for id in pathogen_list:
+
+        pt +="'"+id+"',"
+
+    pt = pt[:-1]
+    pt += ")"
     # define query here
-    query = {
-        '$and': [
-        { '$or': [ { 'ProteinA': { '$in' : pathogen_list } }, { 'ProteinB' : { '$in': host_list } } ] },
-        { '$or': [ { 'ProteinA': { '$in' : host_list } }, { 'ProteinB' : { '$in': pathogen_list } } ] }
-    ]
+    query = "SELECT * FROM {} WHERE ProteinA IN {}  AND ProteinB IN {} OR ProteinB IN {}  AND ProteinA IN {}".format(intdb,ht,pt,ht,pt)
+    result = conn.execute(query).fetchall()
+    
+  
+    results = pd.DataFrame(result, columns=['ID', 'ProteinA', 'ProteinB', 'Method', 'Type', 'Confidence', 'PMID'])
 
-    }
-    # Search in database
-
-    result = list(ptable.find(query))
-
-    # convert to Dataframe
-
-    results = pd.DataFrame(result)
-
-    # Extract Host and Pathogen IDs
 
     # For host as interactor A and Pathogen as Interactor B
 
@@ -117,20 +144,33 @@ def ppi(intdb, pathogendf, hostdf):
 
     return final_results
 
-def filter_domain(db, table, idt =None, genes=None):
-    mydb = connection(db)
-    mtable = mydb[table]
+def filter_domain( table, idt =None, genes=None):
+    mydb = create_connection("wheatblast.db")
+ 
 
     if genes !=None:
+        
+        ht="("
+        for id in genes:
+
+            ht +="'"+id+"',"
+
+        ht = ht[:-1]
+        ht += ")"
+
         if idt !=None:
             if  idt =='host':
-                results = list(mtable.find({'Host_Protein': {'$in':genes}}))
+                query = "SELECT * FROM {} WHERE Host_Protein IN {};".format(table,ht)
+                results = mydb.execute(query).fetchall()
             if  idt =='pathogen':
-                results = list(mtable.find({'Pathogen_Protein': {'$in':genes}}))
+                query = "SELECT * FROM {} WHERE Pathogen_Protein IN {};".format(table,ht)
+                results = mydb.execute(query).fetchall()
     else:
-        results = list(mtable.find({}))
+        query = "SELECT * FROM {};".format(table)
+        results = mydb.execute(query).fetchall()
 
     df= pd.DataFrame(results)
+    
     return df
 
 def consensus(interolog, domain):
@@ -179,8 +219,8 @@ def main():
     if options.method == 'interolog':
         for hpd in intTables:
 
-            host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
-            pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
+            host_blast = filter_blast(options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
+            pathogen_blast = filter_blast(options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
             
             hd =hpd+'s'
             
@@ -190,7 +230,6 @@ def main():
                 results.reset_index(inplace=True, drop=True)
                 results_list[hpd]=results
             
-        
         try:
             final = pd.concat(results_list.values(),ignore_index=True)
            
@@ -205,20 +244,20 @@ def main():
         species = options.hosttable.split("_")[1]
         table = 'domain_'+options.domdb+"_"+species
         if hproteins == None and pproteins == None:
-            domain_result = filter_domain(options.blastdb,table)
+            domain_result = filter_domain(table)
         
         elif hproteins !=None and pproteins==None:
 
-            domain_result = filter_domain(options.blastdb, table, idt = options.idt, genes=hproteins)
+            domain_result = filter_domain( table, idt = options.idt, genes=hproteins)
 
         elif hproteins ==None and pproteins !=None:
 
-            domain_result = filter_domain(options.blastdb, table, idt = options.idt, genes=pproteins)
+            domain_result = filter_domain( table, idt = options.idt, genes=pproteins)
 
         for hpd in intTables:
 
-            host_blast = filter_blast(options.blastdb,options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
-            pathogen_blast = filter_blast(options.blastdb,options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
+            host_blast = filter_blast(options.hosttable,options.hi,options.hc,options.he,hpd, genes=hproteins)
+            pathogen_blast = filter_blast(options.pathogentable,options.pi,options.pc,options.pe,hpd, genes=pproteins)
             hd =hpd+'s'
         
             if  isinstance(pathogen_blast, pd.DataFrame) and isinstance(host_blast, pd.DataFrame):
@@ -240,8 +279,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
 
