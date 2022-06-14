@@ -132,9 +132,9 @@ router.route('/domain_results/').post(async(req,res) =>{
     let host_protein;
     let pathogen_protein;
 
-    console.log(body.genes)
-    console.log(body.idt)
-    if (body.genes){
+    console.log(body.page)
+    console.log(body.genes.length)
+    if (body.genes.length>0){
       if (body.idt==='host'){
         final = await Results.find({'Host_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
         counts = await Results.count({'Host_Protein':{'$in':body.genes}})
@@ -152,7 +152,8 @@ router.route('/domain_results/').post(async(req,res) =>{
       }
       
     }
-    if (!body.genes){
+
+    if (body.genes.length===0) {
       final = await Results.find({}).limit(limit).skip(skip).exec()
       counts = await Results.count()
       host_protein =await Results.distinct("Host_Protein")
