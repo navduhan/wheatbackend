@@ -34,6 +34,17 @@ const DomainSchema = new mongoose.Schema({
   score: {type:Number},
 });
 
+function getItems(input) {
+  var arr = input, obj = {};
+  for (var i = 0; i < arr.length; i++) {
+    if (!obj[arr[i].name]) {
+      obj[arr[i].name] = 1;
+    } else if (obj[arr[i].name]) {
+      obj[arr[i].name] += 1;
+    }
+  }
+  return obj;
+}
 
 router.route('/ppi').post(async(req, res) => {
 
@@ -132,8 +143,8 @@ router.route('/domain_results/').post(async(req,res) =>{
     let host_protein;
     let pathogen_protein;
 
-    console.log(body.page)
-    console.log(body.genes.length)
+    console.log(body.idt)
+    console.log(body.genes)
     if (body.genes.length>0){
       if (body.idt==='host'){
         final = await Results.find({'Host_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
@@ -143,12 +154,19 @@ router.route('/domain_results/').post(async(req,res) =>{
       }
       if (body.idt==='pathogen'){
         console.log("yes")
-        final = await Results.find({'Pathgen_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
+        final = await Results.find({'Pathogen_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
         
         counts = await Results.count({'Pathogen_Protein':{'$in':body.genes}})
+
+        let fd = await Results.find({'Pathogen_Protein':{'$in':body.genes}})
+        // host_protein =await Results.distinct("Host_Protein")
+        // pathogen_protein =await Results.distinct('Pathogen_Protein')
+
         // console.log(final)
-        host_protein =await Results.distinct("Host_Protein",{'Pathgen_Protein':{'$in':body.genes}} )
-        pathogen_protein =await Results.distinct('Pathogen_Protein',{'Pathgen_Protein':{'$in':body.genes}})
+        host_protein =[... new Set(fd.map(data => data.Host_Protein))]
+        console.log(host_protein.length)
+        pathogen_protein =[... new Set(fd.map(data => data.Pathogen_Protein))]
+        // console.log(pathogen_protein)
       }
       
     }
