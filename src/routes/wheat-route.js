@@ -122,7 +122,7 @@ router.route('/domain_results/').post(async(req,res) =>{
 
     const table = 'domain_'+body.intdb.toLowerCase()+'_'+body.species
     console.log(table)
-    const limit = parseInt(size)
+    const limit = parseInt(body.size)
 
     const skip = (page-1) * size;
     const resultsdb = mongoose.connection.useDb("wheatblast")
