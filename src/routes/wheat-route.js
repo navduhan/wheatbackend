@@ -147,8 +147,8 @@ router.route('/domain_results/').post(async(req,res) =>{
         
         counts = await Results.count({'Pathogen_Protein':{'$in':body.genes}})
         // console.log(final)
-        host_protein =await Results.distinct("Host_Protein")
-        pathogen_protein =await Results.distinct('Pathogen_Protein')
+        host_protein =_.uniqBy(final, 'Host_Protein').length
+        pathogen_protein =_.uniqBy(final, 'Pathogen_Protein').length
       }
       
     }
