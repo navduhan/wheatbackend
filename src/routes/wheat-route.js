@@ -102,19 +102,25 @@ router.route('/domain_download/').get(async(req,res) =>{
 
 })
  
-router.route('/domain_results/').get(async(req,res) =>{
-  let {species,page,  size, genes,idt, intdb} = req.query
-  if(!page){
+router.route('/domain_results/').post(async(req,res) =>{
+
+  const body = JSON.parse(JSON.stringify(req.body));
+  console.log(body);
+
+  // let {species,page,  size, genes,idt, intdb} = req.query
+  let page;
+  let size;
+  if(!body.page){
       page = 1 
     }
-   if (page){
-     page = parseInt(page) + 1
+   if (body.page){
+     page = parseInt(body.page) + 1
    }
-    if (!size){
+    if (!body.size){
       size = 10
     }
 
-    const table = 'domain_'+intdb.toLowerCase()+'_'+species
+    const table = 'domain_'+body.intdb.toLowerCase()+'_'+body.species
     console.log(table)
     const limit = parseInt(size)
 
@@ -122,23 +128,38 @@ router.route('/domain_results/').get(async(req,res) =>{
     const resultsdb = mongoose.connection.useDb("wheatblast")
     const Results = resultsdb.model(table, DomainSchema)
     let final;
-    if (genes){
-      if (idt==='host'){
-        final = await Results.find({'Host_Protein':{'$in':genes}}).limit(limit).skip(skip).exec()
+    let counts;
+    let host_protein;
+    let pathogen_protein;
+
+    console.log(body.genes)
+    console.log(body.idt)
+    if (body.genes){
+      if (body.idt==='host'){
+        final = await Results.find({'Host_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
+        counts = await Results.count({'Host_Protein':{'$in':body.genes}})
+        host_protein =await Results.distinct("Host_Protein")
+        pathogen_protein =await Results.distinct('Pathogen_Protein')
       }
-      if (idt==='pathogen'){
-        final = await Results.find({'Pathgen_Protein':{'$in':genes}}).limit(limit).skip(skip).exec()
+      if (body.idt==='pathogen'){
+        console.log("yes")
+        final = await Results.find({'Pathgen_Protein':{'$in':body.genes}}).limit(limit).skip(skip).exec()
+        
+        counts = await Results.count({'Pathogen_Protein':{'$in':body.genes}})
+        // console.log(final)
+        host_protein =await Results.distinct("Host_Protein")
+        pathogen_protein =await Results.distinct('Pathogen_Protein')
       }
       
     }
-    else{
-      final = await Results.find({}).limit(limit).skip(skip).exec()
-    }
+    // if (!body.genes){
+    //   final = await Results.find({}).limit(limit).skip(skip).exec()
+    //   counts = await Results.count()
+    //   host_protein =await Results.distinct("Host_Protein")
+    //   pathogen_protein =await Results.distinct('Pathogen_Protein')
+    // }
     
-    let counts = await Results.count()
-    let host_protein =await Results.distinct("Host_Protein")
-   
-    let pathogen_protein =await Results.distinct('Pathogen_Protein')
+    
     res.json({'results':final,'total':counts,'hostcount':host_protein.length,'pathogencount':pathogen_protein.length})
 
 })
