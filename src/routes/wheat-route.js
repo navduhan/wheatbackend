@@ -103,7 +103,7 @@ router.route('/domain_download/').get(async(req,res) =>{
 })
  
 router.route('/domain_results/').get(async(req,res) =>{
-  let {species,page,  size, intdb} = req.query
+  let {species,page,  size, genes,idt, intdb} = req.query
   if(!page){
       page = 1 
     }
@@ -121,8 +121,20 @@ router.route('/domain_results/').get(async(req,res) =>{
     const skip = (page-1) * size;
     const resultsdb = mongoose.connection.useDb("wheatblast")
     const Results = resultsdb.model(table, DomainSchema)
+    let final;
+    if (genes){
+      if (idt==='host'){
+        final = await Results.find({'Host_Protein':{'$in':genes}}).limit(limit).skip(skip).exec()
+      }
+      if (idt==='pathogen'){
+        final = await Results.find({'Pathgen_Protein':{'$in':genes}}).limit(limit).skip(skip).exec()
+      }
+      
+    }
+    else{
+      final = await Results.find({}).limit(limit).skip(skip).exec()
+    }
     
-    let final = await Results.find({}).limit(limit).skip(skip).exec()
     let counts = await Results.count()
     let host_protein =await Results.distinct("Host_Protein")
    
