@@ -152,12 +152,12 @@ router.route('/domain_results/').post(async(req,res) =>{
       }
       
     }
-    // if (!body.genes){
-    //   final = await Results.find({}).limit(limit).skip(skip).exec()
-    //   counts = await Results.count()
-    //   host_protein =await Results.distinct("Host_Protein")
-    //   pathogen_protein =await Results.distinct('Pathogen_Protein')
-    // }
+    if (!body.genes){
+      final = await Results.find({}).limit(limit).skip(skip).exec()
+      counts = await Results.count()
+      host_protein =await Results.distinct("Host_Protein")
+      pathogen_protein =await Results.distinct('Pathogen_Protein')
+    }
     
     
     res.json({'results':final,'total':counts,'hostcount':host_protein.length,'pathogencount':pathogen_protein.length})
