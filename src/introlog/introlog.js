@@ -17,7 +17,7 @@ getS.stdout.on('data', (data) => {
 
     output = data.toString();
 
-    // console.log('output was generated: ' + output);
+    console.log('output was generated: ' + output);
 });
 
 getS.stdin.setEncoding = 'utf-8';
