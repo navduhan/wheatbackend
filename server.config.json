@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "wheatbackend",
+      "cwd": "/Users/naveen/Documents/phd/ranch/tritikbdb/wheatbackend",
+      "script": "index.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3715
+      }
+    }
+  ]
+}
