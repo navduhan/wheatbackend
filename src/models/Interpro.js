@@ -13,7 +13,7 @@ const InterproSchema = new mongoose.Schema({
     
 });
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 const InterproAestivums = resultsdb.model('interpro_aestivums', InterproSchema)
 const InterproTurgidums = resultsdb.model('interpro_turgidums', InterproSchema)
 const InterproTindicas = resultsdb.model('interpro_tindicas', InterproSchema)

@@ -7,7 +7,7 @@ const TFSchema = new mongoose.Schema({
     
 });
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 const TFAestivums = resultsdb.model('tf_aestivums', TFSchema)
 const TFTurgidums = resultsdb.model('tf_turgidums', TFSchema)
 

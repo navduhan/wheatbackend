@@ -54,7 +54,7 @@ def create_connection(db_file):
     return conn
 
 def filter_blast(table,ident, cov, evalue,intdb,genes=None):
-    db = create_connection("wheatblast.db")
+    db = create_connection("wheatbackend.db")
     if genes !=None:
         st="("
         for id in genes:
@@ -145,7 +145,7 @@ def ppi(intdb, pathogendf, hostdf):
     return final_results
 
 def filter_domain( table, idt =None, genes=None):
-    mydb = create_connection("wheatblast.db")
+    mydb = create_connection("wheatbackend.db")
  
 
     if genes !=None:

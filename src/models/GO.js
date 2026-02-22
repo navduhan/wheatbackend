@@ -13,7 +13,7 @@ const GOSchema = new mongoose.Schema({
 
 
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 const GOAestivums = resultsdb.model('go_aestivums', GOSchema)
 const GOTurgidums = resultsdb.model('go_turgidums', GOSchema)
 const GOTindicas = resultsdb.model('go_tindicas', GOSchema)

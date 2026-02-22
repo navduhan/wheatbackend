@@ -7,7 +7,7 @@ const LocalSchema = new mongoose.Schema({
     
 });
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 const LocalAestivums = resultsdb.model('local_aestivums', LocalSchema)
 const LocalTurgidums = resultsdb.model('local_turgidums', LocalSchema)
 const LocalTindicas = resultsdb.model('local_tindicas', LocalSchema)

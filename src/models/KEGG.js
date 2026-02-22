@@ -8,7 +8,7 @@ const KEGGSchema = new mongoose.Schema({
     
 });
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 const KEGGAestivums = resultsdb.model('kegg_aestivums', KEGGSchema)
 const KEGGTurgidums = resultsdb.model('kegg_turgidums', KEGGSchema)
 const KEGGTindicas = resultsdb.model('kegg_tindicas', KEGGSchema)

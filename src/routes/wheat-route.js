@@ -46,6 +46,23 @@ function getItems(input) {
   return obj;
 }
 
+function normalizeSpecies(species) {
+  if (!species) return "";
+  const normalized = String(species).toLowerCase().trim();
+  const aliasMap = {
+    aestivums: "aestivum",
+    aestivumns: "aestivum",
+    turgidums: "turgidum",
+    tindicas: "tindica",
+  };
+  return aliasMap[normalized] || normalized;
+}
+
+function getSpeciesModel(modelMap, species) {
+  const key = normalizeSpecies(species);
+  return modelMap[key];
+}
+
 router.route('/ppi').post(async(req, res) => {
 
 
@@ -104,7 +121,7 @@ router.route('/domain_download/').get(async(req,res) =>{
     const table = 'domain_'+intdb.toLowerCase()+'_'+species
     console.log(table)
     
-    const resultsdb = mongoose.connection.useDb("wheatblast")
+    const resultsdb = mongoose.connection.useDb("wheatbackend")
     const Results = resultsdb.model(table, DomainSchema)
     
     let final = await Results.find({})
@@ -136,7 +153,7 @@ router.route('/domain_results/').post(async(req,res) =>{
     const limit = parseInt(body.size)
 
     const skip = (page-1) * body.size;
-    const resultsdb = mongoose.connection.useDb("wheatblast")
+    const resultsdb = mongoose.connection.useDb("wheatbackend")
     const Results = resultsdb.model(table, DomainSchema)
     let final;
     let counts;
@@ -219,9 +236,14 @@ router.route('/go/').get(async(req, res) => {
 
       const skip = (page-1) * size;
 
-      let go_results = await GO[species].find().limit(limit).skip(skip).exec()
-      let total = await GO[species].count()
-      let knum = await GO[species].distinct('term')
+      const goModel = getSpeciesModel(GO, species);
+      if (!goModel) {
+        return res.status(400).json({ error: "Invalid species parameter" });
+      }
+
+      let go_results = await goModel.find().limit(limit).skip(skip).exec()
+      let total = await goModel.countDocuments()
+      let knum = await goModel.distinct('term')
       console.log(knum.length)
       res.json({'data':go_results, 'total':total})
 
@@ -247,8 +269,13 @@ router.route('/kegg/').get(async(req, res) => {
 
       const skip = (page-1) * size;
 
-      let kegg_results = await KEGG[species].find().limit(limit).skip(skip).exec()
-      let total = await KEGG[species].count()
+      const keggModel = getSpeciesModel(KEGG, species);
+      if (!keggModel) {
+        return res.status(400).json({ error: "Invalid species parameter" });
+      }
+
+      let kegg_results = await keggModel.find().limit(limit).skip(skip).exec()
+      let total = await keggModel.countDocuments()
 
       res.json({'data':kegg_results, 'total':total})
 
@@ -273,8 +300,13 @@ router.route('/interpro/').get(async(req, res) => {
 
       const skip = (page-1) * size;
 
-      let interpro_results = await Interpro[species].find().limit(limit).skip(skip).exec()
-      let total = await Interpro[species].count()
+      const interproModel = getSpeciesModel(Interpro, species);
+      if (!interproModel) {
+        return res.status(400).json({ error: "Invalid species parameter" });
+      }
+
+      let interpro_results = await interproModel.find().limit(limit).skip(skip).exec()
+      let total = await interproModel.countDocuments()
 
       res.json({'data':interpro_results, 'total':total})
 
@@ -297,8 +329,13 @@ router.route('/local/').get(async(req, res) => {
 
       const skip = (page-1) * size;
 
-      let local_results = await Local[species].find().limit(limit).skip(skip).exec()
-      let total = await Local[species].count()
+      const localModel = getSpeciesModel(Local, species);
+      if (!localModel) {
+        return res.status(400).json({ error: "Invalid species parameter" });
+      }
+
+      let local_results = await localModel.find().limit(limit).skip(skip).exec()
+      let total = await localModel.countDocuments()
 
       res.json({'data':local_results, 'total':total})
 
@@ -321,8 +358,13 @@ router.route('/tf/').get(async(req, res) => {
 
       const skip = (page-1) * size;
 
-      let transcription_results = await TF[species].find().limit(limit).skip(skip).exec()
-      let total = await TF[species].count()
+      const tfModel = getSpeciesModel(TF, species);
+      if (!tfModel) {
+        return res.status(400).json({ error: "Invalid species parameter" });
+      }
+
+      let transcription_results = await tfModel.find().limit(limit).skip(skip).exec()
+      let total = await tfModel.countDocuments()
 
       res.json({'data':transcription_results, 'total':total})
 

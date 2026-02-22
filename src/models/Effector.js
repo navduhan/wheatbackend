@@ -9,7 +9,7 @@ const EffectorSchema = new mongoose.Schema({
     
 });
 
-const resultsdb = mongoose.connection.useDb("wheatblast")
+const resultsdb = mongoose.connection.useDb("wheatbackend")
 
 const EffectorTindicas = resultsdb.model('effector_tindicas', EffectorSchema)
 
